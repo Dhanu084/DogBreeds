@@ -43,9 +43,9 @@ $.ajax({
     success:function(data){
         $.each(data.message, function(key, value) {
             //console.log(ikey+" "+value.length);
-            if(value.length>0){
+           // if(value.length>0){
                    $('#dogs-list').append($('<option>').text(key).attr('value', key));
-            }
+            //}
             
         });
     }
@@ -71,9 +71,13 @@ function fethcRandomDogImage(ans){
 }    
 function getImage(){
     let ans = $('#dogs-type').val();
-    console.log(ans);
+    let u = 'https://dog.ceo/api/breed/'+parentBreed+'/'+ans+'/images/random';
+    if(ans==null) {
+        u = 'https://dog.ceo/api/breed/'+parentBreed+'/images/random';
+    }
+    console.log(parentBreed+" "+ ans);
     $.ajax({
-        url:'https://dog.ceo/api/breed/'+parentBreed+'/'+ans+'/images/random',
+        url:u,
         method:'GET',
         success: function (data) {
             imageURL = data.message;
