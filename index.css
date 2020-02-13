@@ -15,6 +15,7 @@ header{
     margin-left: 5%;
     width:20rem;
     padding: 0.4%;
+    overflow:scroll;
 }
 
 #dogs-list option{
