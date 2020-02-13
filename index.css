@@ -1,0 +1,52 @@
+header{
+    height: 5rem;
+    width: 100vw;
+    background-color: cadetblue;
+}
+
+#dogs-list{
+    margin-top: 2%;
+    margin-left: 5%;
+    width:20rem;
+    padding: 0.4%;
+}
+#dogs-type{
+    margin-top: 2%;
+    margin-left: 5%;
+    width:20rem;
+    padding: 0.4%;
+}
+
+#dogs-list option{
+    height: 2rem;;
+    padding: 5%;;
+}
+
+#image-container{
+    position: relative;
+    /* border: 2px solid black; */
+    margin-top: 5%;
+    margin-left: 5%;
+    height:400px;
+    width: 80vw;
+    
+}
+
+#next{
+    position: absolute;
+    right: 5%;
+    top:80%;
+    background-color:coral;
+    font-weight: bold;
+}
+
+#image-container img{
+    border: 2px solid black;
+    height:100%;
+    width: 40%;
+}
+
+button{
+    padding: 7px 25px;
+    margin-left: 5%;
+}
