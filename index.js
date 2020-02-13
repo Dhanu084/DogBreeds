@@ -26,7 +26,7 @@ function getList() {
                 if(type==parentBreed){
                     console.log(type);
                     responseJSON.message[type].forEach(element => {
-                        breedType.push($('#dogs-type').append($('<option>').text(element).attr('value', element)));
+                        $('#dogs-type').append($('<option>').text(element).attr('value', element));
                     });
                 }
              }
